@@ -25,26 +25,28 @@ const ListItem = ({ index }) => {
       />
       {isHovered && (
         <>
-          <ReactPlayer
-            className="player"
-            url={trailer}
-            playing={true}
-            width={"225"}
-            height={"140"}
-            playsinline
-            fluid={false}
-            objectFit={"cover"}
-            controls={false}
-            loop={true}
-            style={{
-              width: "225px",
-              height: "140px",
-              position: "absolute",
-              objectFit: "cover",
-              top: "0",
-              left: "0"
-            }}
-          />
+          <div className="player">
+            <ReactPlayer
+            allow="autplay; encrypted-media"
+              url={trailer}
+              playing={true}
+              width={"225"}
+              height={"140"}
+              playsinline
+              fluid={false}
+              objectFit={"cover"}
+              controls={false}
+              loop={true}
+              style={{
+                width: "225px",
+                height: "140px",
+                position: "absolute",
+                objectFit: "cover",
+                top: "0",
+                left: "0"
+              }}
+            />
+          </div>
           <div className="itemInfo">
             <div className="icons">
               <PlayArrow />
