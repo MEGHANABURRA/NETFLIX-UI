@@ -65,9 +65,11 @@
                     background-color: white;
                     color: var(--main-color);
                     mix-blend-mode: difference;
-                    font-weight: bolder;
+                    //font-weight: bolder;
+                    border: white solid 1px;
                     margin: 5px 5px;
-                    border: none;
+                    //border: none;
+                    //position:relative;
                 }
             }
         }
